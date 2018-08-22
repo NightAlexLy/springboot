@@ -58,7 +58,7 @@ import xin.rtime.model.UserCache;
  */
 @RestController
 @SpringBootApplication
-@RequestMapping("/cache")
+@RequestMapping("/chapter8")
 public class Chapter8Application {
 	
     @Autowired

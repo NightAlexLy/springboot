@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,10 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
  *   
  *   依赖：
  *   
+ *   	<dependency>
+ *			<groupId>org.springframework.boot</groupId>
+ *			<artifactId>spring-boot-starter-web</artifactId>
+ *		</dependency>
  *   
  */
-@RestController
 @SpringBootApplication
+@RestController
+@RequestMapping("/chapter1")
 public class Chapter1Application {
 
     @GetMapping("/demo1")

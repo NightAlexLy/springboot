@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import xin.rtime.prop.MyProperties1;
@@ -38,6 +39,7 @@ import xin.rtime.prop.MyProperties2;
  */
 @RestController
 @SpringBootApplication
+@RequestMapping("/chapter2")
 public class Chapter2Application {
 
 	private final MyProperties1 properties1;

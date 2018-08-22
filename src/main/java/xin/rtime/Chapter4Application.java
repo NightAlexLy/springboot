@@ -51,7 +51,7 @@ import xin.rtime.service.Chapter4Service;
  */
 @RestController
 @SpringBootApplication
-@RequestMapping("/users")
+@RequestMapping("/chapter4")
 public class Chapter4Application {
 
 	private final Chapter4Service chapter4Service;

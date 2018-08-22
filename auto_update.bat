@@ -2,7 +2,7 @@
 
 set "currentYMD=%date:~,4%-%date:~5,2%-%date:~8,2% %time:~,2%:%time:~3,2%:%time:~6,2%" 
 d:
-cd D:\gitProject\doc
+cd D:\workspace\20180410\springboot
 git pull origin master  
 git status  
 git add .  

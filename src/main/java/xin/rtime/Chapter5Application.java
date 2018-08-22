@@ -49,7 +49,7 @@ import xin.rtime.repository.UserRepository;
  */
 @RestController
 @SpringBootApplication
-@RequestMapping("/users2")
+@RequestMapping("/chapter5")
 public class Chapter5Application {
 
 	private final UserRepository userRepository;

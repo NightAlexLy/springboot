@@ -10,4 +10,6 @@
 - chapter6  与mybatis整合
 - chapter7  与mybatis-mapper分页整合
 - chapter8  与Lettuce-redis整合
-
+- chapter9  与spring-cache整合
+- chapter10 集成Swagger在线调试
+- chapter11 与rabbitmq整合
