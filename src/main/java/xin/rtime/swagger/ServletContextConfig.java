@@ -23,9 +23,10 @@ public class ServletContextConfig extends WebMvcConfigurationSupport {
                 "classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("/static/**").addResourceLocations(
                 "classpath:/META-INF/resources/static/");
-        super.addResourceHandlers(registry);}
+        super.addResourceHandlers(registry);
+    }
 
-
+    
     /**
      * 配置servlet处理
      */

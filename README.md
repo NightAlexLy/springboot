@@ -13,3 +13,6 @@
 - chapter9  与spring-cache整合
 - chapter10 集成Swagger在线调试
 - chapter11 与rabbitmq整合
+- chapter12 与rabbitmq整合[延迟消息]
+- chapter13 与actuator整合[监控]
+- chapter14 与spring-boot-admin整合
