@@ -23,6 +23,8 @@ public class ServletContextConfig extends WebMvcConfigurationSupport {
                 "classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("/static/**").addResourceLocations(
                 "classpath:/META-INF/resources/static/");
+        registry.addResourceHandler("/**").addResourceLocations(
+                "classpath:/META-INF/spring-boot-admin-server-ui/");
         super.addResourceHandlers(registry);
     }
 

@@ -46,7 +46,6 @@ import de.codecentric.boot.admin.server.config.EnableAdminServer;
  *
  *         
  */
-
 @SpringBootApplication
 @EnableAdminServer
 public class Chapter14Application {
@@ -75,8 +74,11 @@ public class Chapter14Application {
     @Configuration
     public static class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
         private String adminContextPath;
+        
+        public SecuritySecureConfig() {
+		}
 
-        @Autowired
+		@Autowired
         public SecuritySecureConfig(AdminServerProperties adminServerProperties) {
             this.adminContextPath = adminServerProperties.getContextPath();
         }
@@ -86,15 +88,17 @@ public class Chapter14Application {
             SavedRequestAwareAuthenticationSuccessHandler successHandler = new SavedRequestAwareAuthenticationSuccessHandler();
             successHandler.setTargetUrlParameter("redirectTo");
 
-            http.authorizeRequests()
-                    .antMatchers(adminContextPath + "/assets/**").permitAll()
-                    .antMatchers(adminContextPath + "/login").permitAll()
-                    .anyRequest().authenticated()
-                    .and()
-                    .formLogin().loginPage(adminContextPath + "/login").successHandler(successHandler).and()
-                    .logout().logoutUrl(adminContextPath + "/logout").and()
-                    .httpBasic().and()
-                    .csrf().disable();
+            if(adminContextPath != null && adminContextPath.length() != 0) {
+            	http.authorizeRequests()
+                .antMatchers(adminContextPath + "/assets/**").permitAll()
+                .antMatchers(adminContextPath + "/login").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin().loginPage(adminContextPath + "/login").successHandler(successHandler).and()
+                .logout().logoutUrl(adminContextPath + "/logout").and()
+                .httpBasic().and()
+                .csrf().disable();
+            }
         }
     }
 }

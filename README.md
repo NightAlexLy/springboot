@@ -16,3 +16,15 @@
 - chapter12 与rabbitmq整合[延迟消息]
 - chapter13 与actuator整合[监控]
 - chapter14 与spring-boot-admin整合
+- chapter15 spring task
+- chapter16 文件上传
+- chapter17 全局异常
+- chapter18 数据校验
+- chapter19 防止重复提交（本地） 
+- chapter20 与liquibase[数据库管理]整合
+- chapter21 websocket聊天室
+- chapter22 与shiro[安全框架]整合
+- chapter23 限流
+- chapter24 防止重复提交（分布式）
+
+
