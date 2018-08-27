@@ -8,12 +8,14 @@ import java.lang.reflect.Parameter;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.stereotype.Component;
 import org.springframework.util.ReflectionUtils;
 
 import xin.rtime.repea.annotation.CacheLock;
 import xin.rtime.repea.annotation.CacheParam;
 import xin.rtime.repea.key.CacheKeyGenerator;
 
+@Component
 public class LockKeyGenerator implements CacheKeyGenerator {
 
     @Override

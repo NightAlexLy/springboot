@@ -13,7 +13,7 @@ import xin.rtime.repea.annotation.LocalLock;
  * 
  *   示例19 ：
  *   
- *      Spring boot 防重校验
+ *      Spring boot 防重校验[本地]
  *      
  *   引入依赖：
  *   

@@ -21,10 +21,11 @@
 - chapter17 全局异常
 - chapter18 数据校验
 - chapter19 防止重复提交（本地） 
-- chapter20 与liquibase[数据库管理]整合
+- chapter20 防止重复提交（分布式）
 - chapter21 websocket聊天室
 - chapter22 与shiro[安全框架]整合
 - chapter23 限流
-- chapter24 防止重复提交（分布式）
+- chapter24 与liquibase[数据库管理]整合
+- chapter25 ajax跨域
 
 
